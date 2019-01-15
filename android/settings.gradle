@@ -1,0 +1,3 @@
+rootProject.name = 'mindwaveHonors'
+
+include ':app'
