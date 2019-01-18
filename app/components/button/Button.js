@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import { TouchableOpacity, Text, View } from 'react-native';
 import MindWaveMobile from 'react-native-mindwave-mobile';
+import Tts from 'react-native-tts';
 
 import styles from './styles';
 const mwm = new MindWaveMobile();
 export default class Button extends Component {
+  componentDidMount = async () => {
+    Tts.speak('Hello, world!');
+  };
   state = {
     id: ''
   };
